@@ -57,7 +57,7 @@ spec:
         - name: CURRENT_HOST_NODENAME
           valueFrom:
             fieldRef:
-              fieldPath: status.hostIP
+              fieldPath: spec.nodeName
         volumeMounts:
         - name: cni
           mountPath: /etc/cni/net.d
