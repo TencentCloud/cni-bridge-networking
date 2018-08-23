@@ -2,8 +2,6 @@
 
 `cni-bridge-networking` 一个用于部署 `bridge` 和 `loopback` cni 插件的工具，用于提供类似 `kubenet` 的功能。工具会 watch kubernetes 的 `node` 对象并根据 `spec.podCIDR` 配置相应的 conf。
 
-**Note**: `cni-bridge-networking` 依赖 `pod.status.hostIP` 来判断当前所处的节点，需要 kubernetes node 的 name 与 node 的 ip 保持一致。
-
 ## 编译
 
 ### 编译二进制文件
